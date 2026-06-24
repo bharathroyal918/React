@@ -1,0 +1,16 @@
+.cards-container {
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: row;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 30px;
+
+  padding: 40px;
+}
