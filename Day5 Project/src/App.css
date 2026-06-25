@@ -1,0 +1,23 @@
+.cards-container {
+  /* min-height: 100vh; */
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: row;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 30px;
+
+  padding: 40px;
+}
+.heading {
+  display: flex;
+  color: transparent;
+  margin-top: 20px;
+  -webkit-text-stroke: 2px rgb(62, 143, 193);
+  justify-content: center;
+}

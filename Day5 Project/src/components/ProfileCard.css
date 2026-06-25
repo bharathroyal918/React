@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* body {
+  height: 100vh;
+  background-color: #111;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+body {
+  background-color: #111;
+}
+
+/* Card Container */
+
+.profile-card {
+  width: 350px;
+  padding: 30px;
+
+  background-color: #1c1c1c;
+  color: white;
+
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+
+  transition: 0.3s ease;
+}
+
+/* Hover Effect */
+
+.profile-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Profile Image */
+
+.profile-card img {
+  width: 120px;
+  height: 120px;
+
+  border-radius: 50%;
+
+  border: 3px solid #00d8ff;
+
+  object-fit: cover;
+
+  margin-bottom: 20px;
+}
+
+/* Name */
+
+.profile-card h1 {
+  font-size: 28px;
+  color: #00d8ff;
+
+  margin-bottom: 10px;
+}
+
+/* Role */
+
+.profile-card h3 {
+  font-size: 20px;
+  color: #ddd;
+
+  margin-bottom: 15px;
+}
+
+/* Description */
+
+.profile-card p {
+  font-size: 15px;
+  line-height: 1.5;
+
+  color: #aaa;
+
+  margin-bottom: 25px;
+}
+
+/* Social Links */
+
+.links {
+  display: flex;
+  gap: 15px;
+}
+
+.links a {
+  text-decoration: none;
+
+  background-color: #00d8ff;
+  color: black;
+
+  padding: 10px 15px;
+
+  border-radius: 10px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.links a:hover {
+  background-color: white;
+  color: #111;
+}
