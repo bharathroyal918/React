@@ -1,9 +1,17 @@
 import ProfileCard from "./components/ProfileCard";
 import "./App.css";
+import profileImg from "./assets/Profile.jpeg";
+import sumaImg from "./assets/suma.jpeg";
+import gowthamImg from "./assets/Gowtham.png";
+import sunilImg from "./assets/sunil.jpeg";
+import reddyImg from "./assets/reddy.jpeg";
+import sumanthImg from "./assets/sumanth.jpeg";
+import jagadeeshImg from "./assets/jagadeesh.jpeg";
+import satheeshImg from "./assets/satheesh.jpeg";
 
 const p1 = {
   name: "Bharath Royal",
-  img: "./src/assets/Profile.jpeg",
+  img: profileImg,
   role: "Python Full Stack Developer",
   bio: "A Passionate Full Stack Developer...",
   linkedin: "https://www.linkedin.com/in/chevvuru-bharath-kumar/",
@@ -11,49 +19,49 @@ const p1 = {
 };
 const p2 = {
   name: "Sumathi Reddy",
-  img: "./src/assets/suma.jpeg",
+  img: sumaImg,
   role: "Data Analyst",
   bio: "A Passionate Data Analyst...",
   linkedin: "https://www.linkedin.com/in/sumathi-reddy-9168bb267/",
 };
 const p3 = {
   name: "Gowtham Reddy",
-  img: "./src/assets/Gowtham.png",
+  img: gowthamImg,
   role: "Java Full Stack Developer",
   bio: "A Passionate Java Full Stack Developer...",
   linkedin: "https://www.linkedin.com/in/v-gowtham-reddy/",
 };
 const p4 = {
   name: "Sunil Reddy",
-  img: "./src/assets/sunil.jpeg",
+  img: sunilImg,
   role: "Data Scientist",
   bio: "A Passionate Data Scientist...",
   linkedin: "https://www.linkedin.com/in/sunil-reddy-6385bb271/",
 };
 const p5 = {
   name: "Reddy Babu",
-  img: "./src/assets/reddy.jpeg",
+  img: reddyImg,
   role: "Data Analyst",
   bio: "A Passionate Data Analyst...",
   linkedin: "https://www.linkedin.com/in/chevvuru-bharath-kumar/",
 };
 const p6 = {
   name: "Sumanth",
-  img: "./src/assets/sumanth.jpeg",
+  img: sumanthImg,
   role: "Portrait Drawing Specialist",
   bio: "A Passionate Full Stack Developer...",
   linkedin: "https://www.linkedin.com/in/sumanth-rachineni/",
 };
 const p7 = {
   name: "Jagadeesh",
-  img: "./src/assets/jagadeesh.jpeg",
+  img: jagadeeshImg,
   role: "Associate Engineer @TCS",
   bio: "Jr. Associate Engineer",
   linkedin: "https://www.linkedin.com/in/chevvuru-bharath-kumar/",
 };
 const p8 = {
   name: "Satheesh",
-  img: "./src/assets/satheesh.jpeg",
+  img: satheeshImg,
   role: "Data Scientist",
   bio: "A Passionate Data Scientist...",
   linkedin: "https://www.linkedin.com/in/golla-sathish/",
