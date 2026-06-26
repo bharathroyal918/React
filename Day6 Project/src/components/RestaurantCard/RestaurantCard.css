@@ -1,0 +1,216 @@
+.restaurant-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition:
+    transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    box-shadow 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+}
+
+.restaurant-card-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.restaurant-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.restaurant-card:hover .restaurant-card-img {
+  transform: scale(1.08);
+}
+
+.restaurant-card-img-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.restaurant-card-offer {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  color: var(--text-white);
+  color: white;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.5px;
+}
+
+.restaurant-card-type {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.type-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.restaurant-card-type.veg {
+  color: var(--green-dark);
+  border-radius: 12px;
+}
+.type-dot.veg {
+  background: var(--green);
+}
+
+.restaurant-card-type.nonveg {
+  color: var(--red);
+  border-radius: 12px;
+}
+.type-dot.nonveg {
+  background: var(--red);
+}
+
+.restaurant-card-type.both {
+  color: var(--primary-dark);
+  border-radius: 12px;
+}
+.type-dot.both {
+  background: var(--primary);
+}
+
+.restaurant-card-promoted {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--text-white);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.restaurant-card-fav {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c4c4c4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all var(--transition-base);
+}
+
+.restaurant-card-fav:hover {
+  color: var(--red);
+  transform: scale(1.15);
+}
+
+.restaurant-card-fav.liked {
+  color: var(--red);
+}
+
+.restaurant-card-body {
+  padding: 14px 16px;
+}
+
+.restaurant-card-name-row {
+  margin-bottom: 6px;
+}
+
+.restaurant-card-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1b1e24;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.restaurant-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.restaurant-card-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  color: var(--text-white);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.restaurant-card-rating.high {
+  background: var(--green-dark);
+}
+.restaurant-card-rating.medium {
+  background: var(--green);
+}
+.restaurant-card-rating.low {
+  background: var(--gold);
+}
+
+.restaurant-card-dot {
+  color: #c4c4c4;
+  font-size: 10px;
+}
+
+.restaurant-card-time,
+.restaurant-card-price {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.restaurant-card-cuisines {
+  font-size: 13px;
+  color: #93959f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 4px;
+}
+
+.restaurant-card-location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #93959f;
+}
